@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página</title>
+    <link rel="stylesheet" href="../css/styles.css"> <!-- Ajuste de la ruta a la carpeta css -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../img/usuario.png" alt="Usuario" class="logo">
+            <a href="index.html" class="site-name">MercadoIA</a> <!-- Ruta interna a index.html dentro de templates -->
+        </div>
+        <div class="nav-container">
+            <div class="nav-item">
+                COMPARACIÓN DE MERCADO
+                <div class="dropdown-panel">
+                    <span class="panel-item">Comparación de Competidores</span>
+                    <span class="panel-item">Proyección de Demanda</span>
+                </div>
+            </div>
+            <div class="nav-item">
+                ESTUDIO DE MERCADO
+                <div class="dropdown-panel">
+                    <span class="panel-item" id="analisis-mercado-link">Análisis de Mercado</span>
+                    <span class="panel-item">Recursos Emergentes</span>
+                </div>
+            </div>
+            <div class="nav-item">
+                HISTORIAL DE TENDENCIAS
+                <div class="dropdown-panel">
+                    <span class="panel-item">Comparativa Temporal</span>
+                    <span class="panel-item">Tendencias Emergentes</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="dynamic-content" class="info-box">
+            <h2 id="animated-text"></h2>
+            <p id="animated-subtext"></p>
+        </div>
+
+        <!-- Sección que muestra "Análisis de mercado" centrado en la parte superior -->
+        <div id="analisis-mercado-content" class="info-box" style="display: none; text-align: center;">
+            <h1 id="analisis-mercado-text" style="font-family: 'Roboto Mono', monospace; color: #63361c; margin-top: 20px;"></h1>
+        </div>
+    </main>
+
+    <!-- Enlace al archivo JavaScript externo -->
+    <script src="../js/scripts.js"></script> <!-- Ajuste de la ruta a la carpeta js -->
+</body>
+</html>
