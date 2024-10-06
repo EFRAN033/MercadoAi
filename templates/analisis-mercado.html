@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página - Análisis de Mercado</title>
+    <link rel="stylesheet" href="../css/styles.css"> <!-- Ajusta la ruta hacia la carpeta css -->
+    <link rel="stylesheet" href="../css/styles-analisis-mercado.css"> <!-- Ajusta la ruta hacia la carpeta css -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../img/usuario.png" alt="Usuario" class="logo"> <!-- Ajusta la ruta si tienes imágenes -->
+            <a href="../templates/index.html" class="site-name">MercadoIA</a> <!-- Ruta ajustada -->
+        </div>
+        <div class="nav-container">
+            <div class="nav-item">
+                COMPARACIÓN DE MERCADO
+                <div class="dropdown-panel">
+                    <span class="panel-item">Comparación de Competidores</span>
+                    <span class="panel-item">Proyección de Demanda</span>
+                </div>
+            </div>
+            <div class="nav-item">
+                ESTUDIO DE MERCADO
+                <div class="dropdown-panel">
+                    <span class="panel-item" id="analisis-mercado-link">Análisis de Mercado</span>
+                    <span class="panel-item">Recursos Emergentes</span>
+                </div>
+            </div>
+            <div class="nav-item">
+                HISTORIAL DE TENDENCIAS
+                <div class="dropdown-panel">
+                    <span class="panel-item">Comparativa Temporal</span>
+                    <span class="panel-item">Tendencias Emergentes</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="center-content">
+        <!-- Texto centrado arriba -->
+        <h1 class="center-text">Análisis de mercado</h1>
+        
+        <!-- Botones debajo del texto -->
+        <div class="dropdown-container">
+            <!-- Botón Región -->
+            <div class="dropdown-region">
+                <button class="dropdown-button" id="regionButton">REGIÓN <span class="arrow-down">▼</span></button>
+                <div class="dropdown-content" id="regionContent">
+                    <!-- Las regiones se cargarán dinámicamente desde el archivo JSON -->
+                </div>
+            </div>
+
+            <!-- Botón Departamento (Provincias) -->
+            <div class="dropdown-region">
+                <button class="dropdown-button" id="departamentoButton">DEPARTAMENTO <span class="arrow-down">▼</span></button>
+                <div class="dropdown-content" id="departamentoContent">
+                    <!-- Las provincias se cargarán dinámicamente según la región seleccionada -->
+                </div>
+            </div>
+
+            <!-- Botón Distrito -->
+            <div class="dropdown-region">
+                <button class="dropdown-button" id="distritoButton">DISTRITO <span class="arrow-down">▼</span></button>
+                <div class="dropdown-content" id="distritoContent">
+                    <!-- Los distritos se cargarán dinámicamente según la provincia seleccionada -->
+                </div>
+            </div>
+
+            <!-- Botón Categoría -->
+            <div class="dropdown-region">
+                <button class="dropdown-button" id="categoriaButton">CATEGORÍA <span class="arrow-down">▼</span></button>
+                <div class="dropdown-content" id="categoriaContent">
+                    <!-- Las categorías se cargarán dinámicamente desde el archivo JSON -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Botón de Buscar -->
+        <div class="search-container">
+            <button class="search-button">Buscar</button>
+        </div>
+    </main>
+
+    <!-- Enlace al archivo JavaScript externo -->
+    <script src="../js/scripts-analisis-mercado.js"></script> <!-- Ajusta la ruta hacia la carpeta js -->
+</body>
+</html>

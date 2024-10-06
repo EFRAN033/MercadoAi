@@ -1,0 +1,115 @@
+/* Estilos generales para el contenido centrado */
+.center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 30px; /* Ajustado de 50px a 30px para moverlo más arriba */
+    background-color: #FDEDD1;
+    text-align: center;
+    height: 100vh;
+}
+
+/* Estilo del texto centrado en la parte superior */
+.center-text {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 35px;
+    color: #63361c;
+    margin-bottom: 30px;
+}
+
+/* Contenedor para los menús desplegables */
+.dropdown-container {
+    display: flex;
+    gap: 130px;
+    margin-top: 20px; /* Puedes ajustar el margen superior si es necesario */
+}
+
+/* Posicionamiento relativo de las regiones */
+.dropdown-region {
+    position: relative;
+}
+
+/* Estilo para los botones de menú desplegable */
+.dropdown-button {
+    background-color: #f3d9a4;
+    color: #63361c;
+    padding: 10px 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+/* Flecha dentro de los botones desplegables */
+.dropdown-button .arrow-down {
+    margin-left: 10px;
+    font-size: 16px;
+    transform: rotate(90deg);
+    color: #333;
+}
+
+/* Estilo para el contenido del menú desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f3d9a4;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 200px;
+    border: none;
+    border-radius: 4px;
+}
+
+/* Estilo para los enlaces dentro del menú desplegable */
+.dropdown-content a {
+    color: #63361c;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+}
+
+/* Estilo para los enlaces cuando se pasa el mouse por encima */
+.dropdown-content a:hover {
+    background-color: #63361c;
+    color: #FFFFFF;
+}
+
+/* Mostrar el contenido del menú desplegable cuando se pasa el mouse */
+.dropdown-region:hover .dropdown-content {
+    display: block;
+}
+
+/* Contenedor del botón de búsqueda */
+.search-container {
+    margin-top: 40px; /* Ajusta según sea necesario */
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo para el botón de búsqueda */
+.search-button {
+    background-color: #f3d9a4;
+    color: #63361c;
+    padding: 10px 25px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+/* Cambiar color al pasar el mouse */
+.search-button:hover {
+    background-color: #e0c18a;
+}
